@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "chat",
-    "slug": "chat",
-    "scheme": "chat",
+    "name": "chat-a-roo",
+    "slug": "chat-a-roo",
+    "scheme": "chat-a-roo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icons": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "images": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

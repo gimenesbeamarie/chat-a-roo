@@ -15,7 +15,7 @@ const Profile = () => {
     <View className="flex-1 bg-[#FFDDCF] p-4 pt-20">
       {/* User Info */}
       <View className="items-center mb-4">
-        <Image source={require('../../assets/wink.png')} className="w-20 h-20 rounded-full mb-4" />
+        <Image source={require('../../assets/images/wink.png')} className="w-20 h-20 rounded-full mb-4" />
         <View className="items-center">
           <Text className="text-xl font-bold">gimenesbm</Text>
           <Text className="text-sm text-gray-500">Success is the sum of all the</Text>

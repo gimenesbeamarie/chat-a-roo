@@ -14,37 +14,37 @@ const Settings = () => {
         {/* Push Notification */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/notif.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/notif.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">Push Notification</Text>
           </View>
-          <Image source={require('../../assets/button.png')} className="w-8 h-8" />
+          <Image source={require('../../assets/images/button.png')} className="w-8 h-8" />
         </View>
 
         {/* Email Notification */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/email.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/email.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">Email Notification</Text>
           </View>
-          <Image source={require('../../assets/button.png')} className="w-8 h-8" />
+          <Image source={require('../../assets/images/button.png')} className="w-8 h-8" />
         </View>
 
         {/* SMS Notification */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/message.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/message.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">SMS Notification</Text>
           </View>
-          <Image source={require('../../assets/button.png')} className="w-8 h-8" />
+          <Image source={require('../../assets/images/button.png')} className="w-8 h-8" />
         </View>
 
         {/* Weekly Reminder */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/text.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/text.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">Weekly Reminder</Text>
           </View>
-          <Image source={require('../../assets/button.png')} className="w-8 h-8" />
+          <Image source={require('../../assets/images/button.png')} className="w-8 h-8" />
         </View>
       </View>
 
@@ -54,7 +54,7 @@ const Settings = () => {
         {/* Chat History */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/history.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/history.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">Chat History</Text>
           </View>
         </View>
@@ -62,7 +62,7 @@ const Settings = () => {
         {/* Delete Account */}
         <View className="flex-row justify-between items-center mb-4">
           <View className="flex-row items-center">
-            <Image source={require('../../assets/delete.png')} className="w-8 h-8 mr-4" />
+            <Image source={require('../../assets/images/delete.png')} className="w-8 h-8 mr-4" />
             <Text className="text-lg">Delete Account</Text>
           </View>
         </View>

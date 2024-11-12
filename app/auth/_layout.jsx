@@ -1,5 +1,6 @@
 import React from "react";
 import { Stack} from 'expo-router'
+
 import {useFonts} from 'expo-font'
 import { useEffect } from 'react'
 import { SplashScreen } from 'expo-router'
@@ -7,7 +8,7 @@ import { SplashScreen } from 'expo-router'
 
 SplashScreen.preventAutoHideAsync();
 
-const MainLayout = () =>{
+const AuthLayout = () =>{
 
     const [fontsLoaded, error] = useFonts({
       });
@@ -28,16 +29,10 @@ const MainLayout = () =>{
     return(
         <>
         <Stack>
-            <Stack.Screen name="index" options={{
+            <Stack.Screen name="signin" options={{
                 headerShown: false
             }}/>
-            <Stack.Screen name="edit" options={{
-                headerShown: false
-            }}/>
-            <Stack.Screen name="auth" options={{
-                headerShown: false
-            }}/>
-            <Stack.Screen name="(tabs)" options={{
+            <Stack.Screen name="signup" options={{
                 headerShown: false
             }}/>
         </Stack>
@@ -45,4 +40,4 @@ const MainLayout = () =>{
     )
 }
 
-export default MainLayout
+export default AuthLayout
