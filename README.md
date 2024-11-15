@@ -1,11 +1,11 @@
 # Chat a Roo
-Chat-a-Roo Anonymous Messages App
+Anonymous Messages App
 
 # Features
-* Share Projects
-* Message other developers
-* Rate others work
-* Search other developers
+* Anonymous Messaging
+* Customizable Profiles
+* Profile Link Sharing/Copying
+* Messages Filters
 
 # Course Overview
 * Basic React Native Components
@@ -29,3 +29,7 @@ Chat-a-Roo Anonymous Messages App
 
 # Tabs Screen
 <img src="assets/images/tabs.png">  
+
+# Walkthrough
+
+[Chat-a-Roo Walkthrough](https://youtu.be/7w1pVHVHoUw)
