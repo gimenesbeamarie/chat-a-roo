@@ -1,78 +1,39 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
-import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { ScrollView, Text, View, Image } from 'react-native';
+import { Link, Redirect, router } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { images } from '../constants';
+import CustomButton from '../components/CustomButton';
 
-const Index = () => {
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Image source={require('../assets/images/chatlogo.png')} style={styles.logo} />
+    <SafeAreaView className="bg-[#FFDDCF] h-full">
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
+        <View className="px-9 flex-1 justify-center items-center">
+        <Text className="text-5xl text-gray-500 text-center mb-6 font-caveatbold"> Chat-a-Roo </Text>
+          <Image
+            source={images.logo}
+            className="w-[150] h-[120] mb-8"
+            resizeMode="contain"
+          />
+          <Text className="text-1xl  text-yellow-500 text-center mb-4 font-sourgummy">
+            A unique messaging experience where users chat anonymously. Share thoughts and connect anonymously.
+          </Text>
 
-      <Text style={styles.appName}>chat a roo</Text>
+          <Text className="text-m text-blue-300 text-center font-montserrat mb-6">
+          Chat anonymously freely.
+          </Text>
 
-      <Text style={styles.description}>
-        A unique messaging experience where users chat anonymously. Share thoughts and connect without revealing your identity.
-      </Text>
+          <CustomButton
+            title="GET STARTED"
+            handlePress={() => router.push('/auth/signup')}
+            containerStyles="w-full px-6 py-3 rounded-full shadow-md"
+            className="text-white mt-2"
+          />
+        </View>
+      </ScrollView>
 
-      <Link href="/auth/signin" asChild>
-        <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.buttonText}>Log In</Text>
-        </TouchableOpacity>
-      </Link>
-
-      <Link href="/auth/signup" asChild>
-        <TouchableOpacity style={styles.signupButton}>
-          <Text style={styles.buttonText}>Sign Up</Text>
-        </TouchableOpacity>
-      </Link>
-    </View>
+      <StatusBar backgroundColor="#161622" style="light" />
+    </SafeAreaView>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFDDCF', 
-  },
-  logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 16,
-    resizeMode:'contain'
-  },
-  appName: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: '#4A4A4A',
-    marginBottom: 8,
-  },
-  description: {
-    color: '#6D6D6D',
-    textAlign: 'center',
-    paddingHorizontal: 32,
-    marginBottom: 32,
-  },
-  loginButton: {
-    backgroundColor: '#F6CA56', 
-    width: 192,
-    paddingVertical: 12,
-    borderRadius: 50,
-    marginBottom: 16,
-    alignItems: 'center',
-  },
-  signupButton: {
-    backgroundColor: '#78CBED', 
-    width: 192,
-    paddingVertical: 12,
-    borderRadius: 50,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontSize: 18,
-    fontWeight: '500',
-  },
-});
-
-export default Index;
+}
