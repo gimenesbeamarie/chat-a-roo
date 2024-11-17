@@ -19,16 +19,16 @@ Anonymous Messages App
 * HTML, CSS and JS
 
 # Home Screen
-<img src="assets/images/onboarding.png">  
+<img src="assets/screenshot/onboarding.png"> 
 
 # Sign Up Screen
-<img src="assets/images/signup.png">  
+<img src="assets/screenshot/signup.png">  
 
 # Sign In Screen
-<img src="assets/images/login.png">  
+<img src="assets/screenshot/login.png">  
 
 # Tabs Screen
-<img src="assets/images/tabs.png">  
+<img src="assets/screenshot/tabs.png">
 
 # Walkthrough
 
